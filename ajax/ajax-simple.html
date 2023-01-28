@@ -8,7 +8,7 @@
     <style>
       body {
         text-align: center;
-        line-height: 50px;
+        line-height: 30px;
       }
     </style>
   </head>
@@ -26,9 +26,9 @@
             url: "ajax.php",
             method: "post",
             data: { data: input.val() },
-        //     success: function (response) {
-        //     //   result.html(response);
-        //     },
+            success: function (response) {
+               result.html(response);
+            },
           });
         });
       });
